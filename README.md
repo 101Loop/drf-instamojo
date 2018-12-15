@@ -1,5 +1,17 @@
 # Instamojo | Django REST Framework
 
+
+## Feature List
+- [x] Create Payment Request
+- [x] Handle Payment Record
+- [x] Verify payment record from Instamojo Server
+- [x] Update payment request from Instamojo Server
+- [x] Dispatch `payment_done` signal for external app integration
+- [ ] Webhook for server-to-server payment record
+- [ ] Raise refund
+- [ ] Update refund status
+- [ ] Dispatch `refund_done` signal
+
 **A package for Instamojo integration in Django REST Framework**<br>
 
 `Instamojo | Django REST Framework` is a Django packaged app that provides necessary `views` based in Django REST 

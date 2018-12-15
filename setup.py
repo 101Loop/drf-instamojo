@@ -12,7 +12,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     license=__import__('drf_instamojo').__license__,
-    url="https://github.com/101Loop/drf_instamojo",
+    url="https://github.com/101Loop/drf-instamojo",
     python_requires=">=3.4",
     install_requires=open('requirements.txt').read().split(),
     packages=setuptools.find_packages(),
