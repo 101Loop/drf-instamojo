@@ -1,5 +1,6 @@
 # Instamojo | Django REST Framework
 
+### Based on [Instamojo Wrapper](https://github.com/Instamojo/instamojo-py) by [Instamojo](https://github.com/Instamojo)
 
 ## Feature List
 - [x] Create Payment Request
