@@ -22,13 +22,10 @@ SENT_STATUS_CHOICES = (
     (PENDING, "PENDING"),
     (SENT, "SENT"),
     (FAILED, "FAILED"),
-    (NULL, "NULL")
+    (NULL, "NULL"),
 )
 
-PAYMENT_STATUS_CHOICES = (
-    (CREDIT, "CREDIT"),
-    (FAILED, "FAILED")
-)
+PAYMENT_STATUS_CHOICES = ((CREDIT, "CREDIT"), (FAILED, "FAILED"))
 
 CREATE_REQUEST = "payment-requests/"
 LIST_REQUEST = "payment-requests/"

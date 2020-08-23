@@ -5,7 +5,7 @@ Instamojo | Django REST Framework
     :target: https://github.com/psf/black
     :alt: Code style: black
 
-.. image:: https://readthedocs.org/projects/drf-bulk/badge/?version=latest
+.. image:: https://readthedocs.org/projects/drf-instamojo/badge/?version=latest
     :target: https://drf-bulk.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status
 

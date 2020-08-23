@@ -2,8 +2,8 @@ from django.apps import AppConfig
 
 
 class DrfInstamojoConfig(AppConfig):
-    name = 'drf_instamojo'
-    verbose_name = 'Instamojo | Django REST Framework'
+    name = "drf_instamojo"
+    verbose_name = "Instamojo | Django REST Framework"
 
     def ready(self):
         """

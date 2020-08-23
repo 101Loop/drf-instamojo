@@ -12,22 +12,24 @@
 #
 import os
 import sys
+
 # sys.path.insert(0, os.path.abspath('.'))
 
 
 # -- Project information -----------------------------------------------------
 
-project = 'drf-instamojo'
-copyright = '2020, 101 Loop'
-author = '101 Loop'
+project = "drf-instamojo"
+copyright = "2020, 101 Loop"
+author = "101 Loop"
 
 parent_dir = os.path.dirname(os.path.dirname(__file__))
 
+
 def get_version():
-    with open(os.path.join(parent_dir, 'drf_instamojo', '__init__.py')) as f:
+    with open(os.path.join(parent_dir, "drf_instamojo", "__init__.py")) as f:
         for line in f:
-            if line.startswith('__version__ ='):
-                return line.split('=')[1].strip().strip('"\'')
+            if line.startswith("__version__ ="):
+                return line.split("=")[1].strip().strip("\"'")
 
 
 # The full version, including alpha/beta/rc tags
@@ -41,17 +43,16 @@ version = release
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-master_doc = 'index'
-extensions = [
-]
+master_doc = "index"
+extensions = []
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+templates_path = ["_templates"]
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -59,18 +60,18 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+html_theme = "alabaster"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+html_static_path = ["_static"]
 
 html_theme_options = {
-    'description': 'A package for Instamojo integration in Django REST Framework.',
-    'github_banner': 'true',
-    'github_user': '101loop',
-    'github_repo': 'drf-instamojo',
-    'github_button': 'true',
-    'github_type': 'star',
+    "description": "A package for Instamojo integration in Django REST Framework.",
+    "github_banner": "true",
+    "github_user": "101loop",
+    "github_repo": "drf-instamojo",
+    "github_button": "true",
+    "github_type": "star",
 }
