@@ -17,7 +17,7 @@ Based on `Instamojo Wrapper`_ by `Instamojo`_.
 Overview
 ========
 
-``Instamojo | Django REST Framework`` is a Django packaged app that provides necessary views based in Django REST Framework. 
+``Instamojo | Django REST Framework`` is a Django packaged app that provides necessary views based in Django REST Framework.
 It enables easy integration of Instamojo Payment Gateway with Web/Mobile Application with a RESTful API based server.
 
 
@@ -35,11 +35,11 @@ Feature List
 
 |check_| Create Payment Request
 
-|check_| Handle Payment Record  
+|check_| Handle Payment Record
 
-|check_| Verify payment record from Instamojo Server 
+|check_| Verify payment record from Instamojo Server
 
-|check_| Update payment request from Instamojo Server 
+|check_| Update payment request from Instamojo Server
 
 |check_| Dispatch payment_done signal for external app integration
 
@@ -57,7 +57,7 @@ Contents
 
 .. toctree::
    :maxdepth: 3
-   
+
    installation
    configuration
    usage

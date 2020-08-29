@@ -34,13 +34,13 @@ Directory Structure
         │   └── __init__.py
         ├── tests.py
         └── views.py
-    
+
     * You can write your custom logic in ``handlers.py``. Check out Django docs for more info on `Signals`_.
 
     .. _Signals: https://docs.djangoproject.com/en/dev/topics/signals/
-    
+
     * In your ``myapp/app.py`` file import your signals like this:
-    
+
     .. code-block:: python
 
         from django.apps import AppConfig
@@ -55,7 +55,7 @@ Directory Structure
     * Add ``default_app_config`` in your app's ``__init__.py`` file.
 
     .. code-block:: python
-    
+
         default_app_config = 'myapp.apps.MyappConfig'
 
     * **Note:** The ``myapp/__init__.py`` bits are not required if you are already referring to your AppConfig in the INSTALLED_APPS settings.
