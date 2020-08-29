@@ -60,8 +60,12 @@ Contents
    
    installation
    configuration
-   usage 
+   usage
 
+.. toctree::
+    :maxdepth: 2
+
+    extras/index
 
 
 Indices and tables

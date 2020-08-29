@@ -81,6 +81,7 @@ Payment Completion
 * Use ``payment_done`` signal
 * Create ``signals`` python directory with ``__init__.py, handlers.py`` in app
 * In ``handlers.py``, create a function for handling ``payment_done`` signal
+* For more info, see :ref:`extras-signals`
 
 .. code-block:: python
 
