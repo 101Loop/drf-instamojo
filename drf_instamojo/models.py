@@ -3,10 +3,8 @@ Models for Instamojo Application
 
 Author: Himanshu Shankar (https://himanshus.com)
 """
-
 from django.db import models
 from django.utils.text import gettext_lazy as _
-
 from drfaddons.models import CreateUpdateModel
 
 
@@ -32,6 +30,7 @@ class InstamojoConfiguration(CreateUpdateModel):
     )
 
     def __str__(self):
+        """String representation of model"""
         return str(self.api_key)
 
     def clean_fields(self, exclude=None):
@@ -80,6 +79,8 @@ class InstamojoConfiguration(CreateUpdateModel):
         super(InstamojoConfiguration, self).clean_fields(exclude=exclude)
 
     class Meta:
+        """Passing model metadata"""
+
         verbose_name = _("Instamojo Configuration")
         verbose_name_plural = _("Instamojo Configurations")
 
@@ -169,10 +170,13 @@ class PaymentRequest(CreateUpdateModel):
     )
 
     class Meta:
+        """Passing model metadata"""
+
         verbose_name = _("Payment Request")
         verbose_name_plural = _("Payment Request")
 
     def __str__(self):
+        """String representation of model"""
         return self.id
 
 
@@ -293,8 +297,11 @@ class Payment(models.Model):
     )
 
     def __str__(self):
+        """String representation of model"""
         return self.id
 
     class Meta:
+        """Passing model metadata"""
+
         verbose_name = _("Instamojo Payment")
         verbose_name_plural = _("Instamojo Payment")

@@ -3,9 +3,7 @@ All views related to drf_instamojo
 
 Author: Himanshu Shankar (https://himanshus.com)
 """
-
 from drfaddons.generics import OwnerListCreateAPIView
-
 from rest_framework.generics import ListCreateAPIView
 
 

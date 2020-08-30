@@ -3,12 +3,11 @@ Admin interfaces for models.
 
 Author: Himanshu Shankar (https://himanshus.com)
 """
-
 from django.contrib import admin
-
 from drfaddons.admin import CreateUpdateAdmin
-
-from .models import *
+from models import InstamojoConfiguration
+from models import Payment
+from models import PaymentRequest
 
 
 class InstamojoConfigurationAdmin(CreateUpdateAdmin):
@@ -34,9 +33,13 @@ class PaymentRequestAdmin(CreateUpdateAdmin):
     list_filter = ("status", "is_enabled")
 
     def has_add_permission(self, request):
+        """Did PaymentRequestAdmin has add permission enabled"""
+
         return False
 
     def has_change_permission(self, request, obj=None):
+        """Did PaymentRequestAdmin has change permission enabled"""
+
         return False
 
 
@@ -57,9 +60,13 @@ class PaymentAdmin(admin.ModelAdmin):
     list_filter = ("status", "payment_request")
 
     def has_add_permission(self, request):
+        """Did PaymentRequestAdmin has add permission enabled"""
+
         return False
 
     def has_change_permission(self, request, obj=None):
+        """Did PaymentRequestAdmin has change permission enabled"""
+
         return False
 
 

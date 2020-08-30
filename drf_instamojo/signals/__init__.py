@@ -1,3 +1,6 @@
+"""
+Django Signals
+"""
 import django.dispatch
 
 

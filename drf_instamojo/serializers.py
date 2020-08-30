@@ -8,10 +8,9 @@ Author: Himanshu Shankar (https://himanshus.com)
 """
 import json
 
+from django.utils.text import gettext_lazy as _
 from rest_framework import serializers
 from rest_framework.exceptions import APIException
-
-from django.utils.text import gettext_lazy as _
 
 
 class PaymentRequestSerializer(serializers.ModelSerializer):
@@ -205,6 +204,8 @@ class PaymentRequestSerializer(serializers.ModelSerializer):
             raise APIException(_("Server error: {}".format(str(err))))
 
     class Meta:
+        """Passing model metadata"""
+
         from .models import PaymentRequest
 
         model = PaymentRequest
@@ -351,6 +352,8 @@ class PaymentSerializer(serializers.ModelSerializer):
         return data
 
     class Meta:
+        """Passing model metadata"""
+
         from .models import Payment
 
         model = Payment

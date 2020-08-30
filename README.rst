@@ -12,7 +12,7 @@ Instamojo | Django REST Framework
 A package for Instamojo integration in Django REST Framework. Based on `Instamojo Wrapper`_ by `Instamojo`_.
 
 .. _Instamojo Wrapper: https://github.com/Instamojo/instamojo-py
-.. _Instamojo: https://github.com/Instamojo 
+.. _Instamojo: https://github.com/Instamojo
 
 Overview
 --------
@@ -29,7 +29,7 @@ Contributing
 ============
 
 Please file bugs and send pull requests to the `GitHub repository`_ and `issue
-tracker`_. 
+tracker`_.
 
 .. _GitHub repository: https://github.com/101loop/drf-instamojo/
 .. _issue tracker: https://github.com/101loop/drf-instamojo/issues/

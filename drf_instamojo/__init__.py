@@ -1,3 +1,7 @@
+"""
+Instamojo | Django REST Framework
+"""
+
 __doc__ = """Instamojo | Django REST Framework
 Instamojo Integration based on Django REST Framework
 The app helps in integration of Instamojo with Django where-in project
